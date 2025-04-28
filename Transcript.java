@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class Transcript {
@@ -35,8 +34,8 @@ public void displayTranscript(String[] studentDetails) {
     System.out.println("\nSubjects:");
     System.out.println();
     String[] subjects = studentDetails[2].split("/");
-    System.out.println("studentDetails"+Arrays.toString(studentDetails));
-    System.out.println("subjects"+Arrays.toString(subjects));
+    // System.out.println("studentDetails"+Arrays.toString(studentDetails));
+    // System.out.println("subjects"+Arrays.toString(subjects));
 
     for (String s : subjects) {
         if (s.isEmpty()) continue;

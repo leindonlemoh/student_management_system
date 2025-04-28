@@ -71,7 +71,8 @@ final class Student implements Archivable {
 
             String[] studentDetails = studentInfo.split("-");
 
-
+            // System.out.println("studentInfo"+studentInfo);
+            // System.out.println("studentDetails"+Arrays.toString(studentDetails));
             if (studentDetails.length < 2) {
                 System.out.println("Skipping invalid line: " + studentInfo);
                 continue;
@@ -80,6 +81,8 @@ final class Student implements Archivable {
             
             if (studentDetails.length > 2) {
                 transcript = studentDetails[2];  
+            } else{
+                transcript = "";
             }
 
             if (Integer.parseInt(studentDetails[0]) == oldId) {
